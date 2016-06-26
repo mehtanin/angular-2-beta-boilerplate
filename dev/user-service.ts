@@ -3,7 +3,7 @@ import {Injectable} from 'angular2/core';
 
 @Injectable()
 export class UserService {
-  pin: number = 1234;
+  pin: number = 123456;
 
   constructor(private _loginService: LoginService) {
   }
@@ -14,7 +14,7 @@ export class UserService {
 
   getGreeting() {
     return this._loginService.login(this.pin).then((success) => {
-      return success ? 'Welcome!': 'Login failure!';
+      return success ? 'Congratulations!': 'Sorry, failure!';
     });
   }
 }

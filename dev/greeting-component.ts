@@ -5,7 +5,7 @@ import {UserService} from './user-service';
   selector: 'my-greeting',
   template: `
     <input [(ngModel)]="user.pin" placeholder="1111" type="number"/>
-    <button (click)="enter()">Enter</button>
+    <button (click)="enter()">Check</button>
     <h3>Status: {{greeting}}</h3>
   `,
   styles :[`
@@ -14,7 +14,7 @@ import {UserService} from './user-service';
   `]
 })
 export class GreetingComponent {
-  greeting: string = 'Enter PIN';
+  greeting: string = 'Enter registration number';
   pending: Promise<void>;
 
   constructor(public user: UserService) {

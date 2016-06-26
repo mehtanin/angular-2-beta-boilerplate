@@ -5,7 +5,7 @@ import {BorderComponent} from './border-component';
 @Component({
   selector: 'my-app',
   template: `
-    <my-fancy-border title="The PIN Machine">
+    <my-fancy-border title="Result checker system">
       <my-greeting></my-greeting>
     </my-fancy-border>
   `,
